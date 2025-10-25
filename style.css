@@ -18,8 +18,8 @@ body{
 }
 
 .container{
-    width: 70%;
-    margin: auto;
+    
+    
     /* background-color: red; */
     display: flex;
     flex-direction: column;
