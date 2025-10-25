@@ -18,8 +18,8 @@ body{
 }
 
 .container{
-    
-    
+    width: 90%;
+    margin: auto;
     /* background-color: red; */
     display: flex;
     flex-direction: column;
@@ -34,13 +34,15 @@ h1{
  }
 
 p{
-    margin: 1rem 0;   
+    margin: 1rem 0;
+
 }
 
 .exemplo{
     display: inline-block;
     font-weight: bold;
-  color:var(--cor);
+  color:var(--cor);
+
     background-color:aliceblue;
     border-radius: 8px;
     padding: 2rem;
