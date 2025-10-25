@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laços de Repetição</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Laços de Repetição</h1>
+        <hr>
+
+        <p>
+            Os laços de repetição são uma forma de repetir um trecho de código várias vezes de maneira rápida e prática. Eles permitem executar uma ação repetidamente sem precisar escrever o mesmo comando diversas vezes.
+            Um bom exemplo seria escrever manualmente os números de 1 a 1000 — isso daria muito trabalho!  
+            No entanto, em JavaScript, com poucas linhas de código, conseguimos imprimir toda essa contagem em poucos segundos.
+        </p>
+
+        <p>
+            <strong>Exemplo:</strong><br>
+            for (let i = 0; i < 1000; i++) {<br>
+                &nbsp;&nbsp;console.log(i);<br>
+            }
+        </p>
+
+        <p>
+            Existem várias formas de criar laços, mas todos têm o mesmo objetivo: repetir uma ação várias vezes.  
+            Em alguns casos, será mais fácil usar um tipo específico de laço, dependendo da situação, mesmo que todos cumpram a mesma função básica.
+        </p>
+
+        <h2>1 - For</h2>
+        <p>
+            O laço <strong>for</strong> cria um loop com três expressões opcionais.
+        </p>
+
+        <p>
+            <strong>Exemplo:</strong><br>
+            for (expr1; expr2; expr3) {<br>
+                &nbsp;&nbsp;// código a ser executado<br>
+            }
+        </p>
+
+        <p>
+            A primeira expressão (<strong>expr1</strong>) é executada uma vez antes do bloco de código.  
+            A segunda expressão (<strong>expr2</strong>) define a condição que será verificada para continuar executando o loop.  
+            Por fim, a terceira expressão (<strong>expr3</strong>) é executada após cada iteração do bloco de código.
+        </p>
+
+        <div class="exemplo">
+            <p>
+                for (let i = 0; i <= 5; i++) {<br>
+                &nbsp;&nbsp;text += "O número é " + i;<br>
+                }
+            </p>
+            <p id="ex"></p>
+            <button id="botao1">Testar</button>
+        </div>
+
+        <p>
+            A variável <strong>i</strong> é definida antes do início do loop e começa com o valor <strong>0</strong>, funcionando como um contador.  
+            A expressão <strong>expr2</strong> define que o loop continuará enquanto <strong>i</strong> for menor ou igual a 5.  
+            Já a expressão <strong>expr3</strong> (<strong>i++</strong>) incrementa o valor de <strong>i</strong> em 1 a cada iteração.  
+            Assim, o loop começa em 0 e termina quando <strong>i</strong> chega a 5.
+        </p>
+
+        <h2>2 - While</h2>
+        <p>
+            O loop <strong>while</strong> executa um bloco de código enquanto uma condição especificada for verdadeira.  
+            Usando o mesmo exemplo da variável <strong>i</strong>, o código ficaria assim:
+        </p>
+
+        <div class="exemplo">
+            <p>
+                let i = 0;<br>
+                while (i < 10) {<br>
+                &nbsp;&nbsp;text += "O número é " + i;<br>
+                &nbsp;&nbsp;i++;<br>
+                }
+            </p>
+            <p id="ex2"></p>
+            <button id="botao2">Testar</button>
+        </div>
+
+        <p>
+            Declaramos a variável <strong>i</strong> com valor inicial 0 antes do <strong>while</strong>.  
+            Enquanto <strong>i</strong> for menor que 10, o bloco de código será executado.  
+            É importante incluir o <strong>i++</strong> dentro do loop, pois, caso contrário, <strong>i</strong> nunca aumentará e o loop será executado infinitamente.
+        </p>
+
+        <h2>3 - Do While</h2>
+
+        <p>
+            O <strong>do...while</strong> é semelhante ao <strong>while</strong>, mas com uma diferença importante:  
+            ele executa o bloco de código uma vez antes de verificar a condição.  
+            Depois disso, repete o loop enquanto a condição for verdadeira.
+        </p>
+
+        <div class="exemplo">
+            <p>
+                let i = 0;<br>
+                do {<br>
+                &nbsp;&nbsp;text += "O número é " + i;<br>
+                &nbsp;&nbsp;i++;<br>
+                } while (i < 10);
+            </p>
+            <p id="ex3"></p>
+            <button id="botao3">Testar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
