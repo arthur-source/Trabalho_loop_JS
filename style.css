@@ -18,7 +18,7 @@ body{
 }
 
 .container{
-    width: 80%;
+    width: 90%;
     margin: auto;
     /* background-color: red; */
     display: flex;
@@ -50,9 +50,12 @@ font-size: 20px;
 border: 1px solid;
 }
 
-.exemplo p{
-    margin: 10px;
+.exemplo .exemplo_p{
       font-size: 26px;
+}
+
+.resultado{
+   font-size:26px ;
 }
 
 button{
@@ -83,4 +86,9 @@ h1{
     padding: 0;
  }
  
+ .resultado{
+    width: 100%;
+    font-size: 20px;
+    
+ }
 }
