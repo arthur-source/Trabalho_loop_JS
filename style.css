@@ -71,22 +71,16 @@ h2{
 }
 
 @media screen and (max-width: 505px) {
+     .exemplo{
+        width: 100%;
+        padding: 1rem;
+    }
+ 
 
-            *{
-                margin: 0;
-                padding: 0;
-                box-sizing: 0;
-            }
-
-            .container{
-                margin: auto;
-                width: 100%;
-
-            }
-
-    .exemplo{
-    display: inline-block;
-    
-    width: 100%;
-   
+h1{
+    text-align: center;
+    margin: 15px;
+    padding: 0;
+ }
+ 
 }
